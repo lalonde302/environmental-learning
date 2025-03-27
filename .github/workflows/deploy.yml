@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm install
-          npx expo install @expo/webpack-config
+          npm install --legacy-peer-deps @expo/webpack-config@19.0.1
         
       - name: Build
         run: npx expo export:web
