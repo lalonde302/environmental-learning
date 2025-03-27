@@ -2,13 +2,17 @@
   "name": "environmental-learning",
   "version": "1.0.0",
   "main": "index.ts",
+  "homepage": "https://lalonde302.github.io/environmental-learning",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "deploy": "gh-pages -d web-build",
+    "predeploy": "expo export:web"
   },
   "dependencies": {
+    "@expo/metro-runtime": "~4.0.1",
     "@expo/vector-icons": "^14.0.4",
     "@react-navigation/bottom-tabs": "^7.3.2",
     "@react-navigation/native": "^7.0.18",
@@ -17,17 +21,17 @@
     "expo": "~52.0.40",
     "expo-status-bar": "~2.0.1",
     "react": "18.3.1",
+    "react-dom": "18.3.1",
     "react-native": "0.76.7",
     "react-native-elements": "^3.4.3",
     "react-native-safe-area-context": "^5.3.0",
     "react-native-screens": "^4.9.2",
-    "react-dom": "18.3.1",
-    "react-native-web": "~0.19.13",
-    "@expo/metro-runtime": "~4.0.1"
+    "react-native-web": "~0.19.13"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@types/react": "~18.3.12",
+    "gh-pages": "^6.3.0",
     "typescript": "^5.3.3"
   },
   "private": true
